@@ -1,0 +1,71 @@
+# Java File Handling for Automation
+
+## Topics Covered
+- Reading/Writing Files
+- CSV Handling
+- JSON Handling
+- Properties File Management
+- Reading data from Excel for Test Automation
+
+## Description
+This module demonstrates file handling in Java with a focus on automation testing. It covers reading and writing operations for different file formats commonly used in automation, such as **text files, CSV files, Excel (XLSX), and properties files**.
+
+## Code Examples
+### 1. **Reading a Text File**
+- Demonstrates how to read and print contents of a text file.
+
+### 2. **Reading a CSV File**
+- Uses OpenCSV to read CSV data line by line.
+
+### 3. **Reading an Excel File**
+- Uses Apache POI to read data from an Excel sheet.
+
+### 4. **Reading a Properties File**
+- Loads and reads configuration values from a `.properties` file.
+
+                 +----------------------+
+                 |      User Input       |
+                 +----------------------+
+                            |
+                            v
+                 +----------------------+
+                 |  JavaFileHandling.java |
+                 +----------------------+
+                            |
+  -------------------------------------------------
+  |           |             |             |        |
+  v           v             v             v        v
++----------------+ +----------------+ +----------------+ +----------------+
+| Read Text File | | Read CSV File  | | Read Excel File| | Read Properties|
++----------------+ +----------------+ +----------------+ +----------------+
+  |            |     |            |     |            |     |            |
+  v            v     v            v     v            v     v            v
+Text File  <---+   CSV File  <---+   Excel File  <---+   Properties File <---+
+(Stored Data)      (Stored Data)      (Stored Data)       (Stored Configs)
+
+
+## How to Run
+1. Ensure **OpenCSV** and **Apache POI** dependencies are added to your project.
+2. Create the required files (`testdata.txt`, `testdata.csv`, `testdata.xlsx`, `config.properties`) with sample data.
+3. Compile and run the Java program:
+   ```sh
+   javac JavaFileHandling.java
+   java JavaFileHandling
+   ```
+
+## Expected Output
+```
+Text File Line: Sample test data
+CSV Row: Test1, 123, Passed
+Excel Data: Data from Sheet1
+Property Value: https://example.com
+```
+
+## Why It’s Useful for Automation?
+- Enables **dynamic test data handling** in automation scripts.
+- Automates reading **configuration settings** from properties files.
+- Helps in **data-driven testing** using CSV and Excel files.
+
+---
+This repository is part of the **Java for Automation Series** 🚀
+
