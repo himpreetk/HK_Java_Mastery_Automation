@@ -20,26 +20,41 @@ This module demonstrates **multithreading in Java for automation testing**, enab
 ### 3. **Implementing Runnable Interface**
 - Uses `Runnable` to define test execution logic in threads.
 
-                 +----------------------+
-                 |      User Input       |
-                 +----------------------+
-                            |
-                            v
-                 +----------------------+
-                 |  MultithreadingAutomation.java |
-                 +----------------------+
-                            |
-  -------------------------------------------------
-  |                |                |              |
-  v                v                v              v
-+----------------+ +----------------+ +----------------+ +----------------+
-| Thread-1       | | Thread-2       | | Thread-3       | | Thread-4       |
-| (Executes TC-1)| | (Executes TC-2)| | (Executes TC-3)| | (Executes TC-4)|
-+----------------+ +----------------+ +----------------+ +----------------+
-  |                |                |              |
-  v                v                v              v
-TestCase-1 <-----+  TestCase-2 <----+  TestCase-3 <----+  TestCase-4 <----+
-(Parallel Execution)
+                               +----------------------+
+                               |      User Input       |
+                                +----------------------+
+                                           |
+                                           v
+                            +------------------------------+
+                             |  Multithreading Automation  |
+                             |       (Test Executor)       |
+                             +------------------------------+
+                                           |
+                                           v
+                             +------------------------------+
+                             |  Thread Manager (Executor)   |
+                             +------------------------------+
+                                           |
+                   -------------------------------------------------
+                  |                |                |              |
+                  v                v                v              v
+      +----------------+ +----------------+ +----------------+ +----------------+
+      | Thread-1       | | Thread-2       | | Thread-3       | | Thread-4       |
+      | (Executes TC-1)| | (Executes TC-2)| | (Executes TC-3)| | (Executes TC-4)|
+      +----------------+ +----------------+ +----------------+ +----------------+
+                 |                |                |              |
+                 v                v                v              v
+      +----------------+ +----------------+ +----------------+ +----------------+
+      | TestCase-1    | | TestCase-2    | | TestCase-3    | | TestCase-4        |
+      | (Selenium/    | | (Selenium/    | | (Selenium/    | | (Selenium/        |
+      | API/UI Test)  | | API/UI Test)  | | API/UI Test)  | | API/UI Test)      |
+      +----------------+ +----------------+ +----------------+ +----------------+
+                                         |
+                                         v
+                          +------------------------------+
+                          |  Test Results & Logs         |
+                          | (Pass/Fail, Reports)         |
+                          +------------------------------+
 
 
 ## How to Run
