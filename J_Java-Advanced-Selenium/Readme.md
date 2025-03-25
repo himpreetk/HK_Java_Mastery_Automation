@@ -76,16 +76,16 @@ Java-Advanced-Selenium/
   }
   ```
 
-[User Input] --> [Test Data Source] --> [Test Runner]
-                     |                    |
-                     v                    v
-               [Page Object Model] ---> [Web Interaction]
-                     |                    |
-                     v                    v
-               [Assertions] ---------> [Test Result]
-                     |
-                     v
-               [Report Generation]
+           [User Input] --> [Test Data Source] --> [Test Runner]
+                                   |                    |
+                                   v                    v
+                         [Page Object Model] ---> [Web Interaction]
+                                   |                    |
+                                   v                    v
+                            [Assertions] ---------> [Test Result]
+                                  |
+                                  v
+                        [Report Generation]
 
 
 ## How to Run
