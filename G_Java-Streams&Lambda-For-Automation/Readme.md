@@ -15,28 +15,28 @@ This module demonstrates **Java Streams and Lambda Expressions** in automation t
 ### 2. **Lambda Expressions in Iteration**
 - Uses `forEach()` with a Lambda to print test results.
 
-                 +----------------------+
-                 |      User Input       |
-                 +----------------------+
-                            |
-                            v
-                 +----------------------+
+                    +----------------------+
+                    |      User Input       |
+                    +----------------------+
+                                |
+                                v
+                 +------------------------------+
                  |  StreamsAndLambdaExample.java |
-                 +----------------------+
+                 +-------------------------------+
                             |
-  -------------------------------------------------
-  |                |                    
-  v                v                    
-+----------------+ +----------------+
-| Stream API    | | Lambda Expression |
-| (Filters Data)| | (Prints Results)  |
-+----------------+ +----------------+
-  |                |
-  v                v
-+---------------------+
-| Processed Data Output |
-| (Filtered Test Cases) |
-+---------------------+
+           ------------------------------------------
+                      |                |                    
+                      v                v                    
+            +----------------+ +----------------+
+           | Stream API    | | Lambda Expression |
+           | (Filters Data)| | (Prints Results)  |
+           +----------------+ +----------------+
+                     |                |
+                     v                v
+                  +---------------------+
+                 | Processed Data Output |
+                 | (Filtered Test Cases) |
+                 +---------------------+
 
 
 ## How to Run
