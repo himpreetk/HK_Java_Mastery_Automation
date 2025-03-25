@@ -73,39 +73,39 @@ void tearDown() {
 ```
 🔹 `@AfterEach`: Runs **after each test** to reset resources.
 
-+-------------------+
-|   User/TestRunner |
-+-------------------+
-         │
-         ▼
-+----------------------+
-|  JUnit Test Class    |
-| (CalculatorTest.java) |
-+----------------------+
-         │
-         ▼
-+----------------------+
-|  Calculator Class    |
-|  (Business Logic)    |
-+----------------------+
-         │
-         ▼
-+----------------------+
-|  JUnit Assertions   |
-| (assertEquals, etc.) |
-+----------------------+
-         │
-         ▼
-+----------------------+
-|  JUnit Framework    |
-|  (Runs & Verifies)  |
-+----------------------+
-         │
-         ▼
-+----------------------+
-|  Test Results       |
-|  (Pass / Fail)      |
-+----------------------+
+                     +-------------------+
+                     |   User/TestRunner |
+                     +-------------------+
+                              │
+                              ▼
+                    +----------------------+
+                    |  JUnit Test Class    |
+                    | (CalculatorTest.java) |
+                    +----------------------+
+                              │
+                              ▼
+                    +----------------------+
+                    |  Calculator Class    |
+                    |  (Business Logic)    |
+                    +----------------------+
+                              │
+                              ▼
+                    +----------------------+
+                    |  JUnit Assertions   |
+                    | (assertEquals, etc.) |
+                    +----------------------+
+                              │
+                              ▼
+                    +----------------------+
+                    |  JUnit Framework    |
+                    |  (Runs & Verifies)  |
+                    +----------------------+
+                              │
+                              ▼
+                    +----------------------+
+                    |  Test Results       |
+                    |  (Pass / Fail)      |
+                    +----------------------+
 
   
 ## Steps to Run
