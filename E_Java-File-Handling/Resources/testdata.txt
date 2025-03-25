@@ -1,0 +1,3 @@
+Hello, this is a sample text file.
+It contains multiple lines.
+This is used for Java file handling tests.
